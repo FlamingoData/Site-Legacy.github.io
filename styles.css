@@ -1,0 +1,122 @@
+
+
+  
+
+body {
+ 
+    background-image: url("https://wallpaperaccess.com/full/765801.jpg");
+    background-size: 150%;
+  
+}
+
+#onglet1 {
+    position: relative;
+    left: 500px;
+    width: 100px;
+    height: 50px;
+    background-image:url("https://wallpaperaccess.com/full/4490438.jpg");
+    background-size: 100%;
+    font-size: 15px;
+    color: goldenrod;
+    border-radius: 20px;
+}
+
+p {
+    background-color:hsl(0, 0, 0);
+    font-family: 'Ephesis', cursive;
+    font-size: 75px;
+    color: darkslategrey;
+    position: relative;
+    top: 75px;
+    left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.sceller {
+    width: 4%;
+    height: 4%;
+    margin-left: 810px;
+    margin-right: 810px;
+   vertical-align: middle;
+   position: relative;
+   top: 235px;
+   left: -35px;
+}
+
+.column{
+    width: 10%;
+    height: auto;
+    position: relative;
+    top: auto;
+    left: 200px;
+}
+
+.colonne{
+    width: 10%;
+    height: auto;
+    position: relative;
+    top: auto;
+    left: 1200px;
+}
+
+
+
+
+
+
+textarea {
+    position: relative;
+    top: -750px;
+    margin-left: 660px;
+    margin-right: 660px;
+    color: darkslategrey;
+    font-weight: bold;
+    background-image: url("https://img.freepik.com/premium-photo/recycled-white-paper-texture-background-vintage-wallpaper_118047-8988.jpg?w=1060");
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+
+textarea:focus {
+
+    outline: none;
+  border: none;
+
+}
+
+   
+
+textarea#userText {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
+
+.test {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+
+#download {
+    position: relative;
+    top: -725px;
+    background-image:url("https://wallpaperaccess.com/full/4490438.jpg");
+    background-size: 100%;
+    font-size: 35px;
+    color: goldenrod;
+    width: 286.25px;
+    height: 50px;
+    margin-right: 790px;
+    margin-left: 790px;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+

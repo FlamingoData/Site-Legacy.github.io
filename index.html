@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+            <button id="onglet1"    onclick="redirigerVersNouvellePage()">Tic-Tac Toe</button>
+
+            <script>
+                function redirigerVersNouvellePage() {
+                    // Changer "nouvelle_page.html" par le nom de ta nouvelle page
+                    window.location.href = "tictac.html";
+                }
+            </script>
+        </div>
+      <img class="sceller" src="https://dragonartz.files.wordpress.com/2009/06/vector-fleur-de-lys-wax-seal-prev-by-dragonart.png?w=495&h=495" alt="wax"><p>Journal</p>
+   
+   <form action="">
+    <img src="https://media.discordapp.net/attachments/1181371937625223231/1181373330272551022/73b7c26e4be60c7f26e8573a0df97a85.png?ex=6580d2a6&is=656e5da6&hm=ee8783fca7a1941407b1692a7b3dae058917682b22653692a86d54da535359f4&=&format=webp&quality=lossless&width=170&height=671" alt="column" class="column">
+    <img src="https://media.discordapp.net/attachments/1181371937625223231/1181373330272551022/73b7c26e4be60c7f26e8573a0df97a85.png?ex=6580d2a6&is=656e5da6&hm=ee8783fca7a1941407b1692a7b3dae058917682b22653692a86d54da535359f4&=&format=webp&quality=lossless&width=170&height=671" alt="colonne" class="colonne">
+  
+    
+    <div class="test">
+        <textarea id="userText" rows="30" cols="100" oninput="changeFont()" style="font-family: 'Tangerine', cursive; resize: none;"></textarea>
+    </div>
+</form>
+    <button id="download"  onclick="downloadText()" style="font-family: 'Julius Sans One', sans-serif; resize: none;">download</button>
+    <script>
+        // fonction du bouton download
+        function downloadText() {
+            var textToDownload = document.getElementById('userText').value;
+            var blob = new Blob([textToDownload], { type: 'text/plain' });
+            var a = document.createElement('a');
+            a.href = window.URL.createObjectURL(blob);
+            a.download = 'textFile.txt';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+    </script>
+    
+    
+</body>
+</html>
