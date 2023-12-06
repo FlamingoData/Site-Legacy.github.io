@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="tictac.css">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
     <title>Morpion</title>
 </head>
 <body>
+    <!-- bouton de page -->
+<div>
+    <button id="onglet2"    onclick="redirigerVersNouvellePage()">Journal</button>
+
+    <script>
+        function redirigerVersNouvellePage() {
+            // Changer "nouvelle_page.html" par le nom de ta nouvelle page
+            window.location.href = "index.html";
+        }
+    </script>
+    </div>
+
+    <!-- title -->
+
+    <div><h1 id="title-game">The Arena</h1></div>
+    <div id="back-container"></div>
+
+    <!-- colonne 1 -->
+
+    <img src="https://media.discordapp.net/attachments/1181371937625223231/1181373330272551022/73b7c26e4be60c7f26e8573a0df97a85.png?ex=6580d2a6&is=656e5da6&hm=ee8783fca7a1941407b1692a7b3dae058917682b22653692a86d54da535359f4&=&format=webp&quality=lossless&width=170&height=671" alt="column" class="column">
+  
+    <!-- tableau -->
+
     <div class="board" id="board">
         <div class="cell" onclick="makeMove(0)"></div>
         <div class="cell" onclick="makeMove(1)"></div>
@@ -18,6 +42,11 @@
         <div class="cell" onclick="makeMove(7)"></div>
         <div class="cell" onclick="makeMove(8)"></div>
     </div>
+
+     <!-- colonne 2 -->
+
+    <img src="https://media.discordapp.net/attachments/1181371937625223231/1181373330272551022/73b7c26e4be60c7f26e8573a0df97a85.png?ex=6580d2a6&is=656e5da6&hm=ee8783fca7a1941407b1692a7b3dae058917682b22653692a86d54da535359f4&=&format=webp&quality=lossless&width=170&height=671" alt="colonne" class="colonne">
+    
     <script src="tictac.js"></script>
 </body>
 </html>
